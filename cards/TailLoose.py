@@ -1,7 +1,7 @@
-from cards.EvolutionCard import *
+from cards.EvolutionFeature import *
 
 
-class TailLoose(EvolutionCard):
+class TailLoose(EvolutionFeature):
     def __init__(self):
         super().__init__(name="Отбрасывание хвоста",
                          description="ОТБРАСЫВАНИЕ ХВОСТА. Когда атаковано хищником, поместить в сброс карту этого "

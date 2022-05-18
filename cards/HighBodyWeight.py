@@ -1,7 +1,7 @@
-from cards.EvolutionCard import *
+from cards.EvolutionFeature import *
 
 
-class HighBodyWeight(EvolutionCard):
+class HighBodyWeight(EvolutionFeature):
     def __init__(self):
         super().__init__(name="Большой",
                          description="Данное 🦎 может быть атаковано только \"БОЛЬШИМ\" хищником",

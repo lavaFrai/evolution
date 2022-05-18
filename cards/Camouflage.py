@@ -1,8 +1,8 @@
-from cards.EvolutionCard import *
+from cards.EvolutionFeature import *
 from cards.SharpVision import *
 
 
-class Camouflage(EvolutionCard):
+class Camouflage(EvolutionFeature):
     def __init__(self):
         super().__init__(name="Камуфляж",
                          description="🦎 может быть атаковано только хищником со свойством ОСТРОЕ ЗРЕНИЕ")

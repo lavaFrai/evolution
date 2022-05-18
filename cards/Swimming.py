@@ -1,7 +1,7 @@
-from cards.EvolutionCard import *
+from cards.EvolutionFeature import *
 
 
-class Swimming(EvolutionCard):
+class Swimming(EvolutionFeature):
     def __init__(self):
         super().__init__(name="Водоплавающее",
                          description="🦎 может быть атаковано только хищником со свойством ВОДОПЛАВАЮЩЕЕ. "
