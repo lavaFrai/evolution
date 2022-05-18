@@ -7,6 +7,7 @@ from cards.TailLoose import *
 from cards.Swimming import *
 
 from classes.card import *
+from classes.player import *
 
 
 class EvolutionDeck:
@@ -27,3 +28,6 @@ class EvolutionDeck:
 
     def __len__(self) -> int:
         return len(self.cards)
+
+    def GiveNextCard(self, player: EvolutionPlayer):
+        player.GiveCard(self.cards.pop(0))

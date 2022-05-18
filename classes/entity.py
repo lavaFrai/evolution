@@ -1,6 +1,7 @@
 class Entity:
-    def __init__(self):
+    def __init__(self, card):
         self.features: list = list()
+        self.card = card
 
         self.apples: int = 0
         self.fishes: int = 0
@@ -22,6 +23,7 @@ class Entity:
         self.needs -= feature.weight
         self.features.remove(feature)
 
+    # Атакует другое животное. Возвращает 0 если атака удалась и любое другое число, если нет
     def Attack(self, target) -> int:
         attack_result = 0
         for feature in target.features:
