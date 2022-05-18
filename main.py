@@ -1,6 +1,7 @@
 from cards.HighBodyWeight import *
 from cards.Camouflage import *
 from cards.SharpVision import *
+from cards.TailLoose import *
 from cards.Swimming import *
 
 from classes.entity import *
@@ -18,8 +19,14 @@ animal2.AddFeature(SharpVision())
 animal1.AddFeature(Swimming())
 animal2.AddFeature(Swimming())
 
+animal1.AddFeature(TailLoose())
+
 print("animal1:", animal1, sep='\n')
 print("animal2:", animal2, sep='\n')
+
+print("Animal2 attacking animal1:")
+attack_result = animal2.Attack(animal1)
+print("Success\n" if attack_result == 0 else "Not success\n")
 
 print("Animal2 attacking animal1:")
 attack_result = animal2.Attack(animal1)
